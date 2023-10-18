@@ -1,0 +1,4 @@
+export const ADD_TO_LIKE="ADD_TO_LIKE";
+export const REMOVE_FROM_LIKE="REMOVE_FROM_LIKE";
+export const PLAY_TRACK="PLAY_TRACK";
+export const CAHNGE_AUDIO_STATE="CAHNGE_AUDIO_STATE"

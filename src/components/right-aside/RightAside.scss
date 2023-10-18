@@ -1,0 +1,98 @@
+$main-color: #b3b3b3;
+$main-dark-color: #000000;
+$main-font-size: 18px;
+
+.right__aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-dark-color;
+  width: 340px;
+  min-height: 100vh;
+  padding: 40px 30px 20px 30px;
+  p {
+    font-size: $main-font-size;
+    font-weight: 450;
+    line-height: 24px;
+    color: $main-color;
+    font-size: $main-font-size;
+    width: 100%;
+    margin: 39px 0 23px 0;
+  }
+}
+.right__aside-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  h3 {
+    flex: 1;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: #ccc;
+  }
+  svg {
+    font-size: 28px;
+    cursor: pointer;
+    color: $main-color;
+    &:last-child {
+      margin-left: 15px;
+    }
+  }
+}
+
+.friend__accounts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  width: 100%;
+  .user {
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+    position: relative;
+    p {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: dodgerblue;
+      border-radius: 50%;
+      top: -66%;
+      left: 16%;
+    }
+  }
+  svg {
+    color: #fff;
+    background-color: rgb(54, 54, 61);
+    font-size: 52px;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  .lines {
+    display: flex;
+    flex-direction: column;
+    gap: 4px 0;
+    span {
+      display: block;
+      width: 70px;
+      height: 7px;
+      border-radius: 12px;
+      background-color: rgb(54, 54, 61);
+      &:first-child {
+        width: 110px;
+      }
+    }
+  }
+}
+.settings__btn {
+  color: $main-dark-color;
+  padding: 20px 64px;
+  background-color: #fff;
+  font-size: $main-font-size;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.52px;
+  border-radius: 40px;
+  margin-top: 10px;
+}

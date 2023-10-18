@@ -1,0 +1,112 @@
+$main-light-color: #fff;
+
+.audio__track {
+  background-color: #181818;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 42px;
+}
+.track__name {
+  display: flex;
+  align-items: center;
+  gap: 0 32px;
+  width: 300px;
+  h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    color: $main-light-color;
+  }
+  p{
+    font-size: 16px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+letter-spacing: -0.8px;
+color: #B3B3B3;
+  }
+  button{
+    border: none;
+    background: none;
+    font-size: 28px;
+    color: $main-light-color;
+    cursor: pointer;
+  }
+}
+.audio__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px 0;
+    audio{
+        display: none;
+    }
+}
+.audio__controller{
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    button{
+        border: none;
+        background: none;
+        font-size: 40px;
+        color: $main-light-color;
+        cursor: pointer;
+    }
+
+}
+.audio__volume{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 13px;
+    width: 300px;
+    svg{
+        color: $main-light-color;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    input{
+        accent-color: $main-light-color;
+        width: 119px;
+        height: 6px;
+        border-radius: 20px;
+    }
+}
+.audio__slider{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    p{
+        color: $main-light-color;
+    }
+    input{
+        -webkit-appearance: none;
+        appearance: none; 
+        width: 500px;
+        cursor: pointer;
+        outline: none;
+        overflow: hidden;
+        border-radius: 16px;
+        &::-webkit-slider-runnable-track {
+            height: 8px;
+            background: #B3B3B3;
+            // border-radius: 16px;
+          }
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none; 
+            height: 8px;
+            width: 0px;
+            background-color: $main-light-color;
+            // background-color: red;
+            // border-radius: 50%;
+            // border: 2px solid #f50;
+            box-shadow: -399px 0 0 400px $main-light-color;
+          }
+    }
+
+}

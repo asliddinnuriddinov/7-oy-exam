@@ -1,0 +1,54 @@
+$main-light-color: #fff;
+
+.playlist__nav {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+.playlist__nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  flex: 1;
+  svg {
+    color: $main-light-color;
+    font-size: 45px;
+    cursor: pointer;
+  }
+}
+.playlist__play-btn {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  background-color: none;
+  background: none;
+  border: none;
+  justify-content: center;
+  cursor: pointer;
+  svg {
+    font-size: 70px;
+    color: rgba(0, 255, 64, 0.681);
+  }
+}
+
+.playlist__nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0 32px;
+  svg {
+    font-size: 26px;
+    cursor: pointer;
+    color: $main-light-color;
+  }
+  select {
+    border: none;
+    background: none;
+    color: $main-light-color;
+    width: 150px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    letter-spacing: -0.18px;
+  }
+}
